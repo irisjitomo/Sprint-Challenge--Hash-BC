@@ -12,8 +12,10 @@ def get_indices_of_item_weights(weights, length, limit):
     """
     YOUR CODE HERE
     """
-
-    return None
+# Need to insert the weights in a hashtable
+    for i in weights:
+        hash_table_insert(ht, weights[i], i)
+# retrieve the different weights
 
 
 def print_answer(answer):
