@@ -36,7 +36,7 @@ def reconstruct_trip(tickets, length):
                 hash_table_insert(hashtable, ticket.source, ticket.destination) # insert said tickets in order
                 hash_table_resize()
                 prev_ticket = ticket
-                print(ticket.source, ticket.destination).
+                print(ticket.source, ticket.destination)
 
 
 
