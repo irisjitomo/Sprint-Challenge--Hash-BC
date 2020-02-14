@@ -24,11 +24,27 @@ This sprint challenge is divided up into three parts:  Hash tables coding, block
 
 Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+
+access an array is 0(1), or constant--it's a times and a plus, and those are fast
+
+add or remove from the front is O(n) no matter what because you have to loop through it
+
+add or remove from the back is an O(1) if there's space; if there's no space, you have to loop, giving you O(n)
+
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
 
+While python will automatically add a little extra space every time, if it doesn't and you run out of space, it will bump you to O(n), and you don't have control of when that happens
+
 Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+
+blocks: index, timestamp, list of transactions, proof used to mine this block, hash of previous block
+chain: linked together through hashes; each block carries the hash of the block it was created from
+data organization: genesis block --> 1st block from which all other blocks are mined
+forward is easy; backward movement is impossible
  
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+Someone can access the hashes. and change all the hashes connected to those; proof of work secures the chain by requiring a certain number of zeroes; the more zeroes, the safer the chain. SHA-256, 32-byte-hash, 64 hexidecimal
 
 ## Project Set Up
 
